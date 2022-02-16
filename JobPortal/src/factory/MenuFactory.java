@@ -16,6 +16,7 @@ public class MenuFactory {
 
 
 		if(userChoice ==1) {
+
 			Context context = new Context();
 			ViewNetworkMenuState menuState = new ViewNetworkMenuState();
 			menuState.printStatus(context);
