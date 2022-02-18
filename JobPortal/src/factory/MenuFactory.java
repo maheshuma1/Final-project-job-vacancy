@@ -1,5 +1,6 @@
 package factory;
 import java.util.*;
+import builder.*;
 import state.*;
 public class MenuFactory {
 	public void createMenu() {
@@ -16,12 +17,13 @@ public class MenuFactory {
 
 
 		if(userChoice ==1) {
-
 			Context context = new Context();
 			ViewNetworkMenuState menuState = new ViewNetworkMenuState();
 			menuState.printStatus(context);
 		}
 		if(userChoice ==2) {
+			ApplicationMenu applicationMenu = new ApplicationMenu();
+			applicationMenu.printStatus();
 
 			Context context = new Context();
 			ViewNetworkMenuState menuState = new ViewNetworkMenuState();

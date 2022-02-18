@@ -6,7 +6,5 @@ public class ViewQualificationState implements State {
 	public void printStatus(Context context) {
 		MenuFactory menuFactory = new MenuFactory();
 		menuFactory.createMenu();
-
 	}
-
 }
