@@ -23,6 +23,4 @@ public class Job {
 	public void setLevel(String level) {
 		this.level = level;
 	}
-
-
 }

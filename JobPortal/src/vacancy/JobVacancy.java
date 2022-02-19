@@ -7,7 +7,5 @@ public class JobVacancy {
 
 		MainMenuState startUp = new MainMenuState();
 		startUp.printStatus(context);
-
 	}
-
 }

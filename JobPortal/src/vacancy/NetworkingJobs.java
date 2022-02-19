@@ -1,6 +1,6 @@
 package vacancy;
 
-public class NetworkingJobs extends Job {
+public class NetworkingJobs extends Job{
 	double salary;
 	public double getSalary() {
 		return salary;

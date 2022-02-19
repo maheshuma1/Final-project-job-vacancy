@@ -8,38 +8,23 @@ public class MenuFactory {
 
 		System.out.println("\n\n============SELECT Option============\n\n"+
 		"Enter number associated with your menu selection.\n"+
-		"1) List Networking Jobs\n"+
-		"2) Networking Jobs Qualifications\n"+
+		"1) Default Menu\n"+
+		"2) Networking Menu \n"+
 		"3) MAIN MENU" );
-
 
 		int userChoice = input.nextInt();
 
-
 		if(userChoice ==1) {
-			Context context = new Context();
-			ViewNetworkMenuState menuState = new ViewNetworkMenuState();
-			menuState.printStatus(context);
+			Menu m = new DefaultMenu();
+			m.createMenu();
 		}
 		if(userChoice ==2) {
-			ApplicationMenu applicationMenu = new ApplicationMenu();
-			applicationMenu.printStatus();
-
-			Context context = new Context();
-			ViewNetworkMenuState menuState = new ViewNetworkMenuState();
-			menuState.printStatus(context);
+			Menu m = new NetworkMenu();
+			m.createMenu();
 		}
 		else {
-			Context context = new Context();
-			MainMenuState goHome = new MainMenuState();
-			goHome.printStatus(context);
+			Menu m = new MainMenu();
+			m.createMenu();
 		}
-
-
-
-
-		Context context = new Context();
-		MenuFactory menuFactory = new MenuFactory();
-		menuFactory.createMenu();
 	}
 }
